@@ -1,6 +1,9 @@
 import requests
 
-url = "https://wttr.in/москва"
+
+user_city = input('Введите город: ')
+url = f"https://wttr.in/{user_city}"
+
 
 response = requests.get(url)
 response.raise_for_status()
