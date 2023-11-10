@@ -2,13 +2,12 @@ import requests
 
 
 user_city = input('Введите город: ')
-url = f"https://wttr.in/{user_city}?ru"
+url = f"https://wttr.in/{user_city}"
 
 params = {
-    "n" : '',
-    "m" : '',
-    "ru": '',
-    "1" : ''
+    "nm1" : '',
+    "lang": 'ru',
+    
 }
 
 response = requests.get(url, params = params)
